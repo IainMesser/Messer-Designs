@@ -44,11 +44,11 @@ body {
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 .overlay h1 {
-  font-size: 3.5rem;
+  font-size: 100px;
   margin-bottom: 20px;
 }
 .overlay p {
-  font-size: 1.2rem;
+  font-size: 20px;
   margin-bottom: 30px;
 }
 .scroll-button {
@@ -158,9 +158,196 @@ nav ul li a:hover::after {
 
 
 
+/* About Section */
+.about {
+  padding: 50px;
+  text-align: center;
+  background-color: #444;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f0a;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-img img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f0a; 
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: blur(3px);
+}
+
+.overlay {
+  z-index: 1;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.overlay h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.scroll-button {
+  font-size: 1rem;
+  color: #f0a;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #f0a;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.scroll-button:hover {
+  background-color: #f0a;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Services Section */
+.services {
+  padding: 100px 50px;
+  text-align: center;
+  background-color: #444;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f0a;
+}
+
+.service {
+  margin-top: 30px;
+}
+
+.service h3 {
+  font-size: 1.5rem;
+  color: #f0a;
+}
+
+.service p {
+  color: #ccc;
+}
+
 /* Footer */
 footer {
   background-color: #4A4A7D;
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #services {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+  background-color: #658cbb;
   padding: 20px;
   text-align: center;
   font-size: 1rem;
