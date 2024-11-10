@@ -162,8 +162,8 @@ nav ul li a:hover::after {
     font-size: 70px;
     margin-bottom: 40px;
     font-weight: bold;
-    font-family: "Montserrat", sans-serif;
     color: white;
+    font-family: 'Mont';
   } 
   
   .services-cards {
