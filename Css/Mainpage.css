@@ -220,8 +220,15 @@ nav ul li a:hover::after {
 
 /* Footer */
 footer {
-  background-color: #658cbb;
+  background-color: rgba(0, 0, 0, 0.5); /* Same background color as header */
   padding: 20px;
   text-align: center;
   font-size: 1rem;
+  color: #fff;
+  backdrop-filter: blur(5px); /* Same blur effect as header */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* Ensures it's above other content */
 }
