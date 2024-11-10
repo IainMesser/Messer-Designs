@@ -137,7 +137,7 @@ header {
 
 
 
-  /*Form*/
+  /*Contact form*/
   .overlay {
     position: absolute;
     top: 0;
@@ -165,10 +165,9 @@ header {
     margin-bottom: 40px;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
-    color: #658cbb;
+    color: white;
   }
   
-  /* Contact Form Styles */
   .contact-form {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 30px;
