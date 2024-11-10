@@ -78,7 +78,7 @@ body {
 
 
 
-  /* Transparent Navbar */
+/* Transparent Navbar */
 header {
   position: fixed;
   top: 0;
@@ -105,11 +105,11 @@ nav ul {
   gap: 20px;
 }
 nav ul li a {
-  color: #fff; /* Default color */
+  color: #fff; 
   text-decoration: none;
   font-size: 1rem;
   position: relative;
-  padding: 5px 10px; /* Add some padding for space */
+  padding: 5px 10px; 
   transition: color 0.3s ease;
 }
 nav ul li a::after {
@@ -135,6 +135,7 @@ nav ul li a:hover::after {
 
 
 
+
 /*Service cards*/
   .overlay {
     position: absolute;
@@ -151,13 +152,11 @@ nav ul li a:hover::after {
     text-align: center;
     padding: 20px;
   }
-  
   .container {
     color: #fff;
     max-width: 1200px;
     padding: 10px;
   }
-  
   h2 {
     font-size: 70px;
     margin-bottom: 40px;
@@ -165,14 +164,12 @@ nav ul li a:hover::after {
     color: white;
     font-family: 'Mont';
   } 
-  
   .services-cards {
     display: flex;
     justify-content: space-around;
     gap: 30px;
     flex-wrap: wrap;
   }
-  
   .service-card {
     background-color: #333;
     padding: 30px;
@@ -181,40 +178,23 @@ nav ul li a:hover::after {
     width: 300px;
     transition: transform 0.3s, box-shadow 0.3s;
   }
-  
   .service-card h3 {
     font-size: 2rem;
     margin-bottom: 20px;
     font-weight: bold;
     color: #658cbb;
   }
-  
   .service-card p {
     font-size: 1rem;
     color: #ccc;
     line-height: 1.5;
   }
-  
   .service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .services-cards {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .service-card {
-      width: 80%;
-      margin-bottom: 20px;
-    }
-  }
-  
 
-
+  
 
 
 
@@ -231,4 +211,21 @@ footer {
   left: 0;
   width: 100%;
   z-index: 10; /* Ensures it's above other content */
+}
+
+
+
+
+
+ /* Responsive */
+ @media (max-width: 768px) {
+  .services-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
 }

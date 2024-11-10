@@ -23,7 +23,7 @@ body {
 
 
 
-  /* Background video*/
+/* Background video*/
 .hero {
     position: relative;
     height: 100vh;
@@ -79,7 +79,7 @@ body {
 
 
 
-  /* Transparent Navbar */
+/* Transparent Navbar */
 header {
     position: fixed;
     top: 0;
@@ -106,11 +106,11 @@ header {
     gap: 20px;
   }
   nav ul li a {
-    color: #fff; /* Default color */
+    color: #fff; 
     text-decoration: none;
     font-size: 1rem;
     position: relative;
-    padding: 5px 10px; /* Add some padding for space */
+    padding: 5px 10px; 
     transition: color 0.3s ease;
   }
   nav ul li a::after {
@@ -137,7 +137,7 @@ header {
 
 
 
-  /*Contact form*/
+/*Contact form*/
   .overlay {
     position: absolute;
     top: 0;
@@ -153,13 +153,11 @@ header {
     text-align: center;
     padding: 20px;
   }
-  
   .container {
     color: #fff;
     max-width: 1200px;
     padding: 10px;
   }
-  
   h2 {
     font-size: 70px;
     margin-bottom: 40px;
@@ -167,7 +165,6 @@ header {
     color: white;
     font-family: 'Mont';
   }
-  
   .contact-form {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 30px;
@@ -176,11 +173,9 @@ header {
     max-width: 600px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
-  
   .input-group {
     margin-bottom: 20px;
-  }
-  
+  } 
   input,
   textarea {
     width: 100%;
@@ -193,17 +188,14 @@ header {
     outline: none;
     transition: all 0.3s ease;
   }
-  
   input:focus,
   textarea:focus {
     background-color: #658cbb;
   }
-  
   textarea {
     height: 150px;
     resize: none;
   }
-  
   .submit-button {
     padding: 12px 30px;
     background-color: #658cbb;
@@ -219,18 +211,22 @@ header {
     background-color: #4e6e99;
   }
   
+
+
+
+
   /* Footer */
 footer {
-  background-color: rgba(0, 0, 0, 0.5); /* Same background color as header */
+  background-color: rgba(0, 0, 0, 0.5); 
   padding: 20px;
   text-align: center;
   font-size: 1rem;
   color: #fff;
-  backdrop-filter: blur(5px); /* Same blur effect as header */
+  backdrop-filter: blur(5px); 
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  z-index: 10; /* Ensures it's above other content */
+  z-index: 10; 
 }
   

@@ -23,7 +23,7 @@ body {
 
 
 
-  /* Transparent Navbar */
+/* Transparent Navbar */
 header {
     position: fixed;
     top: 0;
@@ -50,11 +50,11 @@ header {
     gap: 20px;
   }
   nav ul li a {
-    color: #fff; /* Default color */
+    color: #fff; 
     text-decoration: none;
     font-size: 1rem;
     position: relative;
-    padding: 5px 10px; /* Add some padding for space */
+    padding: 5px 10px; 
     transition: color 0.3s ease;
   }
   nav ul li a::after {
@@ -81,7 +81,7 @@ header {
 
 
 
-  /* Hero Section with Video Background */
+/* Hero Section with Video Background */
   .hero {
     position: relative;
     height: 100vh;
@@ -123,7 +123,7 @@ header {
 
 
 
-  /* About Me Section Over the Hero */
+/* About Me Section Over the Hero */
   .about-overlay {
     position: absolute;
     top: 0;
@@ -179,7 +179,7 @@ header {
 
 
 
-  /* Footer */
+/* Footer */
 footer {
     background-color: rgba(0, 0, 0, 0.5); 
     padding: 20px;

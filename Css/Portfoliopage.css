@@ -105,11 +105,11 @@ header {
     gap: 20px;
   }
   nav ul li a {
-    color: #fff; /* Default color */
+    color: #fff; =
     text-decoration: none;
     font-size: 1rem;
     position: relative;
-    padding: 5px 10px; /* Add some padding for space */
+    padding: 5px 10px; 
     transition: color 0.3s ease;
   }
   nav ul li a::after {
@@ -152,13 +152,11 @@ header {
     text-align: center;
     padding: 20px;
   }
-  
   .container {
     color: #fff;
     max-width: 1200px;
     padding: 10px;
   }
-  
   h2 {
     font-size: 60px;
     margin-bottom: 40px;
@@ -166,15 +164,13 @@ header {
     color: white;
     font-family: 'Mont';
   }
-  
   .portfolio-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for 3 designs */
-    gap: 20px; /* Adjust gap between cards */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
     width: 100%;
     margin-top: 40px;
   }
-  
   .portfolio-card {
     background-color: #333;
     padding: 20px;
@@ -185,27 +181,23 @@ header {
     width: 100%;
     max-width: 280px;
   }
-  
   .portfolio-card img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
   }
-  
   .portfolio-card h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
     font-weight: bold;
     color: #658cbb;
   }
-  
   .portfolio-card p {
     font-size: 0.9rem;
     color: #ccc;
     line-height: 1.5;
   }
-  
   .portfolio-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
@@ -218,17 +210,17 @@ header {
 
   /* Footer */
 footer {
-  background-color: rgba(0, 0, 0, 0.5); /* Same background color as header */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   text-align: center;
   font-size: 1rem;
   color: #fff;
-  backdrop-filter: blur(5px); /* Same blur effect as header */
+  backdrop-filter: blur(5px); 
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  z-index: 10; /* Ensures it's above other content */
+  z-index: 10; 
 }
  
 
@@ -246,7 +238,7 @@ footer {
       width: 100%;
     }
   }
-  
+
   @media (max-width: 480px) {
     .portfolio-cards {
       grid-template-columns: 1fr;
