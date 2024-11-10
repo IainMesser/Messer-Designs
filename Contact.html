@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Messer Designs</title>
-  <link rel="stylesheet" href="./Css/Servicespage.css">
+  <link rel="stylesheet" href="./Css/Contactpage.css">
 </head>
 <body>
 
@@ -27,35 +27,34 @@
     </video>
   </section>
 
-  
-<!-- Services Section -->
-<section class="services" id="services">
-    <div class="services-video-overlay">
+  <!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="contact-video-overlay">
       <video autoplay muted loop class="background-video">
         <source src="./Images/your-video.mp4" type="video/mp4">
       </video>
       <div class="overlay">
         <div class="container">
-          <h2>Our Services</h2>
-          <div class="services-cards">
-            <div class="service-card">
-              <h3>Branding</h3>
-              <p>Create a strong identity for your brand with our tailored branding strategies.</p>
-            </div>
-            <div class="service-card">
-              <h3>Web Design</h3>
-              <p>Crafting beautiful, responsive websites that stand out in the digital world.</p>
-            </div>
-            <div class="service-card">
-              <h3>Graphic Design</h3>
-              <p>Custom graphic design solutions to help communicate your message visually.</p>
-            </div>
+          <h2>Contact Us</h2>
+          <div class="contact-form">
+            <form action="#" method="POST">
+              <div class="input-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="input-group">
+                <input type="email" name="email" placeholder="Your Email" required>
+              </div>
+              <div class="input-group">
+                <textarea name="message" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="submit-button">Send Message</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </section>
-
+  
   <!-- Footer -->
   <footer>
     <p>&copy; 2024 Messer Designs. All rights reserved.</p>
