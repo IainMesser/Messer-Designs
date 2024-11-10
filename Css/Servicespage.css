@@ -18,67 +18,67 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+ 
 
 
 
 
-
-/* Background video*/
+ /* Background video*/
 .hero {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-  overflow: hidden;
-}
-.background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 0.6;
-  filter: blur(3px); 
-}
-.overlay {
-  z-index: 1;
-  color: #fff;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-}
-.overlay h1 {
-  font-size: 100px;
-  margin-bottom: 20px;
-  font-family: Mont;
-}
-.overlay p {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-.scroll-button {
-  font-size: 1rem;
-  color: #658cbb;
-  text-decoration: none;
-  padding: 10px 20px;
-  border: 1px solid #658cbb;
-  border-radius: 20px;
-  transition: background-color 0.3s, transform 0.3s;
-}
-.scroll-button:hover {
-  background-color: #658cbb;
-  color: #fff;
-  transform: scale(1.1);
-}
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+  }
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.6;
+    filter: blur(3px); 
+  }
+  .overlay {
+    z-index: 1;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  .overlay h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+    font-family: Mont;
+  }
+  .overlay p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .scroll-button {
+    font-size: 1rem;
+    color: #658cbb;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #658cbb;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  .scroll-button:hover {
+    background-color: #658cbb;
+    color: #fff;
+    transform: scale(1.1);
+  }
 
 
 
 
 
-/* Transparent Navbar */
+  /* Transparent Navbar */
 header {
   position: fixed;
   top: 0;
@@ -135,90 +135,90 @@ nav ul li a:hover::after {
 
 
 
-
-/* About Me Section */
-.about {
-  padding: 50px 0;
-  background-color: #444;
-  text-align: center;
-}
-.about h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #fff;
-}
-.about-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  margin-top: 40px;
-}
-.about-image img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #658cbb;
-}
-.about-description {
-  max-width: 600px;
-  color: #ccc;
-  font-size: 18px;
-}
-.about-description p {
-  line-height: 1.6;
-}
-
-
-
-
-
-/* Services Section */
-.services {
-  background: #444;
-  padding: 50px 0;
-  text-align: center;
-}
-.services h2 {
-  font-size: 36px;
-  color: #fff;
-  margin-bottom: 30px;
-}
-.services-cards {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-.service-card {
-  background-color: #fff;
-  color: #333;
-  padding: 20px;
-  width: 250px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.service-card h3 {
-  font-size: 24px;
-  color: #658cbb;
-  margin-bottom: 15px;
-}
-.service-card p {
-  font-size: 16px;
-  color: #666;
-}
-.service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-}
-
-
+/*Service cards*/
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .container {
+    color: #fff;
+    max-width: 1200px;
+    padding: 10px;
+  }
+  
+  h2 {
+    font-size: 70px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+  } 
+  
+  .services-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .service-card {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service-card h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #658cbb;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.5;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .services-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  
 
 
 
-/* Footer */
+
+
+  /* Footer */
 footer {
   background-color: rgba(0, 0, 0, 0.5); /* Same background color as header */
   padding: 20px;
