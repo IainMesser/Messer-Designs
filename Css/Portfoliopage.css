@@ -283,6 +283,8 @@ h2 {
   gap: 20px;
   width: 100%;
   padding: 20px;
+  margin-left: 3%;
+  
 }
 
 .portfolio-card1 {
@@ -361,3 +363,20 @@ footer {
   z-index: 10; 
 }
   
+
+
+
+
+@media (max-width: 768px) {
+  .portfolio-cards {
+    grid-template-columns: 1fr; /* Stack portfolio cards on small screens */
+  }
+
+  .overlay h1 {
+    font-size: 60px; /* Reduce font size on smaller screens */
+  }
+
+  .overlay p {
+    font-size: 16px; /* Adjust paragraph font size */
+  }
+}
