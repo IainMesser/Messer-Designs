@@ -135,23 +135,21 @@ nav ul li a:hover::after {
 
 
 
-/* Overlay Pricing Section */
+/* Pricing Section */
 .pricing {
     position: absolute;  
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5);  /* Background overlay for the video */
+    background: rgba(0, 0, 0, 0.5);  
     z-index: 2;
     display: flex;
-    justify-content: center;  /* Center the content */
-    align-items: center;  /* Center the content */
+    justify-content: center;  
+    align-items: center;  
     padding: 50px 0;
     color: white;
 }
-
-/* Overlay Styling for the Pricing Section */
 .pricing .overlay {
     position: absolute;
     top: 0;
@@ -166,45 +164,35 @@ nav ul li a:hover::after {
     justify-content: center;
     padding: 50px;
 }
-
-/* Title Styling */
 .pricing h2 {
     font-size: 70px;
     margin-bottom: 30px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
 }
-
-/* Table Styling */
 .pricing-table {
-    width: 90%;  /* Increase width for a wider table */
+    width: 90%;  
     margin: 0 auto;
     border-collapse: collapse;
     font-size: 1.1rem;
     color: #fff;
 }
-
-/* Table Header and Cells */
 .pricing-table th, .pricing-table td {
     padding: 20px 30px;
     text-align: center;
 }
-
 .pricing-table th {
     background-color: #658cbb;
 }
-
 .pricing-table td {
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 /* Popular Plan Styling */
 .pricing-table .popular {
     background-color: #658cbb;
     color: #fff;
     font-weight: bold;
 }
-
 /* Button Styling */
 .pricing-table .btn {
     padding: 10px 20px;
@@ -215,16 +203,14 @@ nav ul li a:hover::after {
     font-size: 1.1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
-    z-index: 2;  /* Ensure button is clickable */
+    z-index: 2;  
 }
-
 /* Button Hover Effect */
 .pricing-table .btn:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     background-color: #556f8c;
 }
-
 
 
 
