@@ -82,31 +82,18 @@ body {
 .scroll-arrow {
   font-size: 2rem;
   color: #658cbb;
-  position: fixed;          
-  right: 20px;              
-  top: 50%;                 
-  transform: translateY(-50%);  
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
-  animation: moveRight 1.5s infinite;
-  transition: opacity 0.5s ease; /* Smooth opacity transition */
+  opacity: 1;
+  transition: opacity 1s ease;
+  z-index: 10;
 }
-/* Animation to move the arrow */
-@keyframes moveRight {
-  0%, 100% {
-    transform: translateY(-50%) translateX(0);
-  }
-  50% {
-    transform: translateY(-50%) translateX(10px);
-  }
-}
-/* Arrow disappears when #portfolio section is the target */
-#portfolio:target .scroll-arrow {
-  display: none;
-}
-/* If you want to keep the arrow visible only in the home section */
-#home:target .scroll-arrow {
-  display: block;
-} 
+
+
+
 
 
 
