@@ -78,50 +78,28 @@ body {
 
 
 
-.scroll-container {
-  display: flex;
-  width: 200vw; /* 2 sections = 2 * 100vw */
-  height: 100vh;
-  transition: transform 1s ease;
+.arrow {
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid #658cbb;
+  padding-right: 5%;
 }
-
-/* Section Style */
-.section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100vw; /* Full width for each section */
-  padding: 20px;
-  color: white;
+.arrow1 {
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid #658cbb;
+  padding-left: 0%;
+  transform: rotate(180deg);
 }
-
-/* Arrow Style */
-.scroll-arrow {
-  font-size: 2rem;
-  color: #658cbb;
-  position: fixed;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  opacity: 1;
-  transition: opacity 1s ease;
-  z-index: 10;
+.hidden {
+  opacity: 0; /* Makes the arrow invisible */
+  pointer-events: none; /* Prevents interaction if necessary */
+  transition: opacity 0.3s ease; /* Adds smooth transition when disappearing */
 }
-
-.scroll-arrow.hidden {
-  opacity: 0;
-  pointer-events: none; /* Prevent clicking when hidden */
-}
-
-
-
-
-
-
-
-
 
 
 /* Transparent Navbar */
