@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+/* General information */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  font-family:'Times New Roman', Times, serif;
+  color: #fff;
+  background-color: #333;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+/* Background video*/
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.6;
+  filter: blur(3px); 
+}
+.overlay {
+  z-index: 1;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.overlay h1 {
+  font-size: 100px;
+  margin-bottom: 20px;
+  font-family: Mont;
+}
+.overlay p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.scroll-button {
+  font-size: 1rem;
+  color: #658cbb;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #658cbb;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.scroll-button:hover {
+  background-color: #658cbb;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+
+
+
+
+/* Transparent Navbar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 10;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  font-size: 1.5rem;
+  color: #fff;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+nav ul li a {
+  color: #fff; 
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+  padding: 5px 10px; 
+  transition: color 0.3s ease;
+}
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #658cbb; 
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+nav ul li a:hover {
+  color: #658cbb;
+}
+nav ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+
+/* Overlay Pricing Section */
+.pricing {
+    position: absolute;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);  /* Background overlay for the video */
+    z-index: 2;
+    display: flex;
+    justify-content: center;  /* Center the content */
+    align-items: center;  /* Center the content */
+    padding: 50px 0;
+    color: white;
+}
+
+/* Overlay Styling for the Pricing Section */
+.pricing .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+/* Title Styling */
+.pricing h2 {
+    font-size: 70px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Table Styling */
+.pricing-table {
+    width: 90%;  /* Increase width for a wider table */
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+/* Table Header and Cells */
+.pricing-table th, .pricing-table td {
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.pricing-table th {
+    background-color: #658cbb;
+}
+
+.pricing-table td {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Popular Plan Styling */
+.pricing-table .popular {
+    background-color: #658cbb;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Button Styling */
+.pricing-table .btn {
+    padding: 10px 20px;
+    background-color: #658cbb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 2;  /* Ensure button is clickable */
+}
+
+/* Button Hover Effect */
+.pricing-table .btn:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    background-color: #556f8c;
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; 
+}
