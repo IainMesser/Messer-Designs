@@ -96,9 +96,9 @@ body {
   transform: rotate(180deg);
 }
 .hidden {
-  opacity: 0; /* Makes the arrow invisible */
-  pointer-events: none; /* Prevents interaction if necessary */
-  transition: opacity 0.3s ease; /* Adds smooth transition when disappearing */
+  opacity: 0; 
+  pointer-events: none; 
+  transition: opacity 0.3s ease; 
 }
 
 
