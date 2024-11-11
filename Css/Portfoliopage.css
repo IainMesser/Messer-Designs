@@ -78,7 +78,25 @@ body {
 
 
 
-/* Arrow Styles */
+.scroll-container {
+  display: flex;
+  width: 200vw; /* 2 sections = 2 * 100vw */
+  height: 100vh;
+  transition: transform 1s ease;
+}
+
+/* Section Style */
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw; /* Full width for each section */
+  padding: 20px;
+  color: white;
+}
+
+/* Arrow Style */
 .scroll-arrow {
   font-size: 2rem;
   color: #658cbb;
@@ -91,6 +109,12 @@ body {
   transition: opacity 1s ease;
   z-index: 10;
 }
+
+.scroll-arrow.hidden {
+  opacity: 0;
+  pointer-events: none; /* Prevent clicking when hidden */
+}
+
 
 
 

@@ -1,17 +1,21 @@
-// Get the scroll arrow element
+// Get the scroll arrow element and the sections
 const scrollArrow = document.querySelector('.scroll-arrow');
+const scrollContainer = document.querySelector('.scroll-container');
 
-// Add a scroll event listener
-window.addEventListener('scroll', function () {
-  // Get the scroll position of the page
-  const scrollPosition = window.scrollY;
+// When the arrow is clicked, scroll to the next section horizontally
+scrollArrow.addEventListener('click', () => {
+  // Scroll to the next section by translating the scroll container to the left by 100vw
+  scrollContainer.style.transform = 'translateX(-100vw)';
 
-  // If the user has scrolled past the first section (adjust this value based on your layout)
-  if (scrollPosition > window.innerHeight) {
-    // Fade out the scroll arrow
-    scrollArrow.style.opacity = '0';
+  // Hide the arrow after click
+  scrollArrow.classList.add('hidden');
+});
+
+// Optional: Detect when the user scrolls horizontally to hide the arrow
+window.addEventListener('scroll', () => {
+  if (window.scrollX > window.innerWidth) {
+    scrollArrow.classList.add('hidden'); // Hide the arrow once user scrolls to the next section
   } else {
-    // Fade in the scroll arrow
-    scrollArrow.style.opacity = '1';
+    scrollArrow.classList.remove('hidden'); // Show the arrow if still in the Home section
   }
 });
