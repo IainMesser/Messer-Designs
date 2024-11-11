@@ -24,5 +24,5 @@ window.addEventListener('scroll', function() {
     // Make the arrows visible again after the user stops scrolling
     arrow1.classList.remove('hidden');
     arrow2.classList.remove('hidden');
-  }, 150); // 150ms delay before showing the arrows (adjust as needed)
+  }, 150); 
 });

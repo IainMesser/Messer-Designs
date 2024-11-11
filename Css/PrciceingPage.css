@@ -168,7 +168,7 @@ nav ul li a:hover::after {
     font-size: 70px;
     margin-bottom: 30px;
     font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mont';
 }
 .pricing-table {
     width: 90%;  
