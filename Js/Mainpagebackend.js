@@ -2,13 +2,9 @@
 const modal = document.getElementById("modal");
 const closeModal = document.getElementById("closeModal");
 
-// Check if the modal has already been shown
-if (!localStorage.getItem("modalShown")) {
     window.addEventListener("load", function() {
       modal.style.display = "flex";
     });
-    localStorage.setItem("modalShown", "true");
-  }
 
 closeModal.onclick = function() {
   modal.style.display = "none";
